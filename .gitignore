@@ -1,0 +1,37 @@
+# Ignore Python/Jupyter Temp Files
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.swp
+
+# Ignore Vivado/Xilinx Build Artifacts and Logs
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+*.xpr
+*.xpr.lock
+
+# Ignore Generated HLS Project Folders
+fpga_gbdt_project/
+fpga_nn_project/
+fpga_mlp_project/
+
+# Ignore Generated Data and Output
+*.csv
+*.png
+hls_headers.zip
+xilinx_headers/
+
+# Ignore the compiled bitstream file
+*.bit
+
+# Ignore the IP integration project folder itself if we rebuild it often
+comet_trigger_integration/
+
+# Ignore the local tool scripts if they are copied from a template
+run_bitstream.tcl
+generate_gbdt_hls.py
+generate_nn_hls.py
